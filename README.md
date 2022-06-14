@@ -1,4 +1,4 @@
-<b><h3>#TICKET.COM BACKEND TAKEWAY HOME TEST<h3></b>
+<b><h3>#TICKET.COM BACKEND TAKEWAY HOME TEST</h3></b>
 
 #HOW TO RUN
 <br/>1.npm install
