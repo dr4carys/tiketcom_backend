@@ -137,7 +137,6 @@ it('should return response 2 data with sort by ASC of Availableroom with start c
   });
   const res = await request(server).get(uri).query({ limit: 2 }).query({ sort: 'ASC' }).query({ start: 250 });
   const resultData = res.body.hotels;
-  console.log('bunch >>', bunchData)
   let t: number = 4;
   resultData.forEach((n: any) => {
     expect(n.AvailableRoom).toBe(bunchData[t].AvailableRoom);

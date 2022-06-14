@@ -1,12 +1,10 @@
 import { schemaComposer } from 'graphql-compose';
-import { hotelCreateMany, hotelConnection } from './hotel';
+import { hotelConnection } from './hotel';
 
 schemaComposer.Query.addFields({
   hotelConnection,
 });
 
-schemaComposer.Mutation.addFields({
-  hotelCreateMany,
-});
+schemaComposer.Mutation.addFields({});
 
 export const graphqlSchema = schemaComposer.buildSchema();

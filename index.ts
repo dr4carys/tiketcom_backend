@@ -21,12 +21,7 @@ server.start().then(() => {
   router.post('/graphql', server.getMiddleware());
   App.use(koaBody());
   App.use(router.routes());
-  console.log(`server listening on port 3001 on`);
-  App.listen(process.env.PORT || 5000);
+  console.log(`server listening on port 3000 on`);
+  App.listen(process.env.PORT);
 });
 
-
-// import { App } from './src';
-
-// console.log('server listening on port 3400');
-// App.listen(3400);

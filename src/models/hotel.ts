@@ -21,7 +21,7 @@ export const hotelSchema = new Schema(
   }
 );
 
-hotelSchema.index({ createdAt: 1, updatedAt: 1 });
+hotelSchema.index({ AvailableRoom: 1, updatedAt: 1 });
 
 export const Hotel = mongoose.model<IHotel>('Hotel', hotelSchema, 'Hotel', true);
 // export const HotelTC = composeMongoose(Hotel);

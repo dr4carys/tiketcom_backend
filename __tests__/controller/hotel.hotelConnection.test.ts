@@ -139,7 +139,6 @@ it('should return response 2 data with sort by ASC of Availableroom with start c
   });
   const res = await request(server).get(uri).query({ limit: 2 }).query({ sort: 'ASC' }).query({ start: 250 });
   const resultData = res.body.hotels;
-  console.log('bunch >>', bunchData)
   let t: number = 4;
   resultData.forEach((n: any) => {
     expect(n.AvailableRoom).toBe(bunchData[t].AvailableRoom);
@@ -147,29 +146,3 @@ it('should return response 2 data with sort by ASC of Availableroom with start c
   });
   server.close();
 });
-// it.only('should return response 2 data with sort by DESC of Availableroom with start cursor number 3 ', async () => {
-//   const server = app.listen();
-//   const uri = `/hotel`;
-//   const res = await request(server).get(uri).query({ limit: 2 }).query({ sort: 'ASC' }).query({ start: 3 });
-//   console.log('res >>', res.body);
-//   const resultData = res.body.hotels;
-//   let t: number = 1;
-//   resultData.forEach((n: any) => {
-//     expect(n.AvailableRoom).toBe(bunchData[t].AvailableRoom);
-//     t++;
-//   });
-//   server.close();
-// });
-// it('should return response 204 for try to update undefined LockId in LockCollection', async () => {
-//   const server = app.listen();
-//   const undefinedLockId = randomString(24);
-//   const uri = `/locks/${undefinedLockId}/undelete`;
-//   const res = await request(server).patch(uri);
-
-//   const lockResult = await Lock.findById(undefinedLockId);
-
-//   // tslint:disable-next-line: no-null-keyword
-//   expect(lockResult).toBeNull();
-//   expect(res.status).toBe(204);
-//   server.close();
-// });
