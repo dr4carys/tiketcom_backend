@@ -9,6 +9,7 @@
 
 <br>http://localhost:3000/hotelwithoutDB?limit=2&sort=DESC&start=0
 <br>http://localhost:3000/hotel?limit=2&sort=DESC&start=0
+<br>http://localhost:3000/graphql
 
 #HOW TO RUN TEST CEST
 <br/>1.npm run test
