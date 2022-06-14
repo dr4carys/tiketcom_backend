@@ -1,7 +1,5 @@
 <b><h3>#TICKET.COM BACKEND TAKEWAY HOME TEST</h3></b>
 
-#Prerequisites
-
 #PREREQUISITES
 <br> insomnia or postman to call the API and get the Graphql schema
 
