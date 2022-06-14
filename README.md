@@ -1,19 +1,12 @@
-# nodeJs_graphql_API
+<b><h3>#TICKET.COM BACKEND TAKEWAY HOME TEST</h3></b>
 
-ENDPOINT GRAPHQL FOR TESTING FRONT END
+#HOW TO RUN
+<br/>1.npm install
+<br/>2.npm run start
 
-endpoint heroku : https://endpoinpractice.herokuapp.com/graphql
- 
-how to retrieve schema from insomnia :
+#HOW TO RUN TEST CEST
+<br/>1.npm run test
 
-
-![image](https://user-images.githubusercontent.com/48232195/151764267-bdc21349-d39c-4863-8509-29944a23281c.png)
-
-
-
-press schema
-press refresh schema
-and after that on the right side you will see the schema
-
-
-![image](https://user-images.githubusercontent.com/48232195/151764385-6fb19485-0303-4ed6-b6b2-a06caeec19cf.png)
+#DESCRIPTION
+<br/> REST concist 2 endpoint hotelConnection and hotelWithOutDB , the difference between those endpoint are 
+<br/> hotelConenciton using MongoDb and hotelWithOutDB using Object as the database
