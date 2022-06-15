@@ -1,6 +1,7 @@
 <b><h3>#TICKET.COM BACKEND TAKEWAY HOME TEST</h3></b>
 
 #PREREQUISITES
+<br> node js
 <br> insomnia or postman to call the API or to get the Graphql schema
 
 #HOW TO RUN
