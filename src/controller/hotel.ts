@@ -64,7 +64,7 @@ export async function hotelWithOutDB(ctx: ParameterizedContext, next: Function) 
           : n.AvailableRoom > parseInt(cursor) && b < parseInt(limit) + 2
           ? b++
           : ''
-        : b < parseInt(limit) + 1
+        : b < parseInt(limit) + 2
         ? b++
         : '';
     });
